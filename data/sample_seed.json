@@ -1,0 +1,10 @@
+{
+  "users": [
+    { "userId": "user_001", "name": "Aarav Shah", "email": "aarav@example.com", "accountAgeDays": 400, "country": "IN", "riskFlags": [] },
+    { "userId": "user_002", "name": "New Account", "email": "newacc@example.com", "accountAgeDays": 2, "country": "IN", "riskFlags": ["velocity_flag"] }
+  ],
+  "merchants": [
+    { "merchantId": "merchant_001", "name": "TrustedMart", "category": "retail", "country": "IN", "trustScore": 85, "isHighRiskCategory": false },
+    { "merchantId": "merchant_002", "name": "QuickCrypto Exchange", "category": "crypto", "country": "IN", "trustScore": 20, "isHighRiskCategory": true }
+  ]
+}

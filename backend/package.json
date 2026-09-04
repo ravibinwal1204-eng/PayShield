@@ -1,0 +1,31 @@
+{
+  "name": "payshield-backend",
+  "version": "1.0.0",
+  "description": "PayShield - Agentic AI Payment Risk Manager (Backend)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed.js",
+    "ingest-policies": "node src/rag/policyIngest.js",
+    "test-guardrail": "node src/test/testGuardrailFlow.js",
+    "test-webhook": "node src/test/testWebhook.js",
+    "generate-dataset": "node src/evaluation/generateDataset.js",
+    "demo-scenarios": "node src/test/runDemoScenarios.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.5.0",
+    "morgan": "^1.10.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.2.0",
+    "nodemon": "^3.1.4"
+  }
+}
